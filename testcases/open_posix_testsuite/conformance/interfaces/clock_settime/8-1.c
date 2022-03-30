@@ -35,7 +35,7 @@ int main(void)
 {
 	struct timespec tsT0, tssleep;
 	int pid;
-
+	printf("Shopee-ltp");
 	/* Check that we're root...can't call clock_settime with CLOCK_REALTIME otherwise */
 	if (getuid() != 0) {
 		printf("Run this test as ROOT, not as a Regular User\n");
